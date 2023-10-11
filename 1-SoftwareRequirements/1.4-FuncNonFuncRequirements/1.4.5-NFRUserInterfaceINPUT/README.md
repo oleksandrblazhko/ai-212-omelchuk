@@ -1,2 +1,6 @@
 ### Вміст каталогу: Опис вимог до INPUT-потоків інтерфейсу користувача
-![](https://raw.githubusercontent.com/oleksandrblazhko/ai-212-omelchuk/laboratory_work_3/1-SoftwareRequirements/1.4-FuncNonFuncRequirements/1.4.5-NFRUserInterfaceINPUT/1.4.5-Table.jpg)
+
+FR | NFR | Засіб INPUT-потоку | Особливості використання
+--- | --- | --- | --- 
+FR2.1 | NFR2.5 | 2/3 кнопочний маніпулятор типу "миша" | Використання колеса миші для завершення процесу вводу даних
+FR2.2 | NFR2.6 | 2/3 кнопочний маніпулятор типу "миша" | Використання колеса миші для завершення процесу вводу даних
