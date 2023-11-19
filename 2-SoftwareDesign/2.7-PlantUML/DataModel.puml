@@ -21,7 +21,7 @@ entity "Online_application" as a02 {
     user_data
 }
 
-entity "Meteo_service" as a03 {
+entity "Psycholigical_service" as a03 {
     (PK) meteosvcId
     --
     meteosvc_name
