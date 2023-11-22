@@ -1,0 +1,19 @@
+@startuml
+
+title Usecase Diagram
+
+left to right direction
+
+actor User
+
+rectangle Software {
+    usecase "Create Online Request" as createRequest
+    usecase "Authorize User" as authorizeUser
+
+    createRequest --> authorizeUser : <<include>>
+
+    User -- createRequest
+    User -- authorizeUser
+}
+
+@enduml
