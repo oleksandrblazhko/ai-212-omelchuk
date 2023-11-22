@@ -1,28 +1,25 @@
 @startuml
 hide circle
 title UML-ConceptClasses
-left to right direction
+top to bottom direction
 
-Class User{
+class User{
     Fullname
     Gender
     Address
     Account_number
 }
 
-Class Psychological_service{
+class Psychological_service{
     Name
     Date_time
     Cost
 }
 
-Class Payment{
+class Payment{
     Payment_method
 }
 
-
-User"1" --> "*"Psychological_service: ViewingTheService
-
-Psychological_service"1" --> "1"Payment: StoresPaymentData
-
+User "1" --> "*" Psychological_service : ViewingTheService
+Psychological_service "1" --> "1" Payment : StoresPaymentData
 @enduml
