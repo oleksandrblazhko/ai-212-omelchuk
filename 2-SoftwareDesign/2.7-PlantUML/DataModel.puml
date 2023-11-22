@@ -8,11 +8,12 @@ entity "User" as a01 {
     (PK) userId
     --
     full_name
-    address
+    gender
+    age
     account_number
     --
     (FK) appId
-    (FK) meteosvcId
+    (FK) psychosvcId
 }
 
 entity "Online_application" as a02 {
@@ -22,11 +23,11 @@ entity "Online_application" as a02 {
 }
 
 entity "Psycholigical_service" as a03 {
-    (PK) meteosvcId
+    (PK) psychosvcId
     --
-    meteosvc_name
-    cost
+    psychosvc_name
     date_time
+    cost
     --
     (FK) payId
 
