@@ -21,6 +21,7 @@ CREATE TABLE "User" (
     userId SERIAL PRIMARY KEY,
     fullName VARCHAR(120) NOT NULL,
     gender VARCHAR(30) NOT NULL CHECK (gender ~ '^[A-Za-z ]+$'),
+    address VARCHAR(200) NOT NULL CHECK (address REGEXP '^[A-Za-z0-9,.\- ]+$'),
     age INT NOT NULL CHECK (age > 0),
     accountNumber INT NOT NULL CHECK (accountNumber >= 0),
     appId INT NOT NULL REFERENCES OnlineApplication(appId),
