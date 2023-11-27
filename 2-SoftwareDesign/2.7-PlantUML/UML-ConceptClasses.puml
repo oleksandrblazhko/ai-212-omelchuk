@@ -1,0 +1,25 @@
+@startuml
+hide circle
+title UML-ConceptClasses
+top to bottom direction
+
+class User{
+    Fullname
+    Gender
+    Address
+    Account_number
+}
+
+class Psychological_service{
+    Name
+    Date_time
+    Cost
+}
+
+class Payment{
+    Payment_method
+}
+
+User "1" --> "*" Psychological_service : ViewingTheService
+Psychological_service "1" --> "1" Payment : StoresPaymentData
+@enduml
