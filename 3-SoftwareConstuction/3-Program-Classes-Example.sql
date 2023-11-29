@@ -1,9 +1,9 @@
-CREATE TYPE Payment_Type AS (
+CREATE OR REPLACE TYPE Payment_Type AS (
     payId SERIAL,
     paymentMethod VARCHAR(50)
 );
 /
-CREATE TYPE PsychologicalService_Type AS (
+CREATE OR REPLACE TYPE PsychologicalService_Type AS (
     psychosvcId SERIAL,
     psychosvcName VARCHAR(100),
     dateTime DATE,
@@ -11,12 +11,12 @@ CREATE TYPE PsychologicalService_Type AS (
     payId INT
 );
 /
-CREATE TYPE OnlineApplication_Type AS (
+CREATE OR REPLACE TYPE OnlineApplication_Type AS (
     appId SERIAL,
     userData VARCHAR(1000)
 );
 /
-CREATE TYPE UserType AS (
+CREATE OR REPLACE TYPE UserType AS (
     userId SERIAL,
     fullName VARCHAR(120),
     gender VARCHAR(30),
