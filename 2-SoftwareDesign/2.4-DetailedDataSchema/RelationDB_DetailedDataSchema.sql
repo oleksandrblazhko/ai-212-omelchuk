@@ -6,7 +6,6 @@ CREATE TABLE Payment (
 CREATE TABLE Psychological_service (
     psychosvcId SERIAL PRIMARY KEY,
     psychosvcName VARCHAR(100) NOT NULL,
-    psychosvcSurname VARCHAR(100) NOT NULL CHECK (psychosvcSurname ~ '^[A-Za-z ]+$'),
     dateTime DATE NOT NULL CHECK (dateTime >= CURRENT_DATE),
     cost INT NOT NULL CHECK (cost >= 0),
     payId INT NOT NULL REFERENCES Payment(payId)
